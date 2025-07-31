@@ -4,7 +4,7 @@ numeroSenha.textContent = tamanhoSenha;
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
 const numeros = '0123456789';
-const simbolos = '!@%*?';
+const simbolos = '!@%*?°/+-&';
 const botoes = document.querySelectorAll('.parametro-senha__botao');
 const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox');
@@ -66,7 +66,8 @@ function classificaSenha(){
            forcaSenha.classList.add('forte');
         } else if (tamanhoSenha > 5 && tamanhoSenha <= 11) {
             forcaSenha.classList.add('media');
-        } else if (tamanhoSenha <= 5){
+        } 
+        else if (tamanhoSenha <= 5){
             forcaSenha.classList.add('fraca');
         }
 }
